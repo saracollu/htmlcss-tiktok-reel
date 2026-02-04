@@ -27,6 +27,8 @@ video {
 	position: relative;
 }
 
+/* header */
+
 .reel-header {
 	display: flex;
 	align-items: center;
@@ -36,8 +38,6 @@ video {
 	height: 8%;
 	top: 0;
 	flex: >1;
-
-         
 
 		i {
 		color: white;
@@ -67,10 +67,8 @@ video {
             border: none;
             color: rgba(255, 248, 220, 0.362);
             position: relative;
-            font-family: "TikTok Sans", sans-serif;
             font-weight: 500;
             font-size: medium;
-				
 		}
 		
 		.per_te {
@@ -78,10 +76,13 @@ video {
 			border-bottom: solid white;
 			border-bottom-width: medium;
             border-radius: 2px 2px 2px 2px;
-	}
+	    }
 		
 }
 }
+
+/* ho raggruppato le tre scritte centrali in modo da poterne gestire 
+la posizione più indipendentemente dalle due icone laterali. Il tutto è contenuto all'interno di un conteiner più grande */
 
 /* Sidebar */
 .sidebar {
@@ -120,8 +121,8 @@ video {
 }
 
 			
-	/* Inserisci qui sotto 
-	le tue regole, se necessario. */
+	/* Ho creato dei contenitori per ogni icona, ognuno con due item (icona e numero sotto), tutti contenuti nel container sidebar.
+	Questo per poter posizionare correttamente i loro item */
 
 
 /* Footer */
