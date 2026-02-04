@@ -18,6 +18,8 @@ video {
 }
 
 .reel-page {
+	display: flex;
+	position: absolute;
 	height: 100vh; /* ti incuriosisce? */
 	max-width: 512px;
 	min-width: 400px;
@@ -25,13 +27,73 @@ video {
 }
 
 .reel-header {
-	position: absolute;
+	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	position: absolute;
+	justify-content: space-around;
+	min-width: 90%;
+	height: 8%;
 	top: 0;
-	left: 0;
-	right: 0;
+	left: 10px;
+	right: 20px;
+	flex: >1;
 
+         
+
+		i {
+		color: white;
+		background-color: transparent;
+		border: none;
+		flex: >1;
+
+			.play {
+				place-items: left;
+			}
+			.search {
+				place-items: right;
+			}
+	    }
+    
+    .btncont {
+	    display: flex;
+		justify-content: space-around;
+		min-width: 40%;
+			
+		.btn {
+			background-color: transparent;
+            border: none;
+            color: rgba(255, 248, 220, 0.362);
+            position: relative;
+            font-family: "TikTok Sans", sans-serif;
+            font-weight: 500;
+            font-size: small;
+				
+		}
+		
+		.per_te {
+			color: #fff;
+			border-bottom: solid white;
+			border-bottom-width: medium;
+            border-radius: 2px 2px 2px 2px;
+	}
+		
+}
+}
+
+/* Sidebar */
+.sidebar {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	padding: 0 16px;
+	position: relative;
+	right: 0;
+	top: 40%;
+	min-width: 60%;
+    
+	.boolean_logo {
+		max-width: 8%;
+	}
 	/* Inserisci qui sotto 
 	le tue regole, se necessario. */
 }
@@ -49,16 +111,7 @@ footer {
 	le tue regole, se necessario. */
 }
 
-/* Sidebar */
-.sidebar {
-	padding: 0 16px;
-	position: absolute;
-	right: 0;
-	top: 40%;
 
-	/* Inserisci qui sotto 
-	le tue regole, se necessario. */
-}
 
 /* ---------------------
 Regole per evidenziare i blocchi 
@@ -69,15 +122,8 @@ da rimuovere una volta concluso
 	border: 2px dashed #fff;
 }
 
-.debug .sidebar {
-	min-width: 80px;
-	min-height: 450px;
-	border: 2px dashed #ff0;
-}
 
-.debug .reel-header {
-	min-height: 50px;
-	border: 2px dashed #fff;
-}
+
+
 
 /* --------------------- */
