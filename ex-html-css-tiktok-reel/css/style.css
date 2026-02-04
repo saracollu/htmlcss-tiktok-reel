@@ -93,25 +93,30 @@ video {
 	right: 0;
 	top: 40%;
 	min-width: 80px;
-	min-height: 450px;
-	
-	
-    
-	    .blogo {
-        background-color: transparent;
+	min-height: 400px;
 
-		 .boolean_logo {
-            max-width: 50px;
-		}
-
-        }
-
-		.item {
-			display: flex;
+    .item {
+			flex-direction: column;
+			align-items: center;
+			padding: 2px;
 			color: #fff;
 			width: 50px;
-			
-		}
+			height: 50px;
+				
+				.icon {
+					font-size: x-large;
+					padding: 9px;
+				}
+				.item-text {
+					font-size: x-small;
+					text-align: center;
+				}
+          
+			.boolean_logo{
+				display: flex;
+				width: 40px;
+			}
+    }
 }
 
 			
