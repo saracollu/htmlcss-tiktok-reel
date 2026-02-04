@@ -20,7 +20,6 @@ video {
 
 .reel-page {
 	display: flex;
-	position: absolute;
 	height: 100vh; /* ti incuriosisce? */
 	max-width: 512px;
 	min-width: 400px;
@@ -88,14 +87,23 @@ la posizione più indipendentemente dalle due icone laterali. Il tutto è conten
 .sidebar {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	position: absolute;
 	align-items: center;
 	right: 0;
 	top: 37%;
 	width: 13%;
 	min-height: 50%;
+    
 
+	.blogo {
+		background-color: transparent;
+		border-style: none;
+	}
+	.boolean_logo { background-color: transparent;
+		border-radius: 50%;
+		max-width: 70%;
+	}
     .item {
 		    display: flex;
 			flex-direction: column;
@@ -112,10 +120,6 @@ la posizione più indipendentemente dalle due icone laterali. Il tutto è conten
 				.item-text {
 					font-size: x-small;
 				}
-          
-			.boolean_logo{
-				padding: 5%;
-				width: 90%;
 			}
     }
 }
