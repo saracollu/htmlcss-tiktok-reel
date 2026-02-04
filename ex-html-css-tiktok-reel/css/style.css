@@ -7,6 +7,7 @@
 body {
 	margin: 0 auto;
 	font-family: 'TikTok Sans', sans-serif;
+	max-width: 512px;
 }
 
 video {
@@ -41,6 +42,7 @@ video {
          
 
 		i {
+		display: flex;
 		color: white;
 		background-color: transparent;
 		border: none;
@@ -58,6 +60,7 @@ video {
 	    display: flex;
 		justify-content: space-around;
 		min-width: 40%;
+		position: relative;
 			
 		.btn {
 			background-color: transparent;
@@ -83,20 +86,38 @@ video {
 /* Sidebar */
 .sidebar {
 	display: flex;
-	flex-wrap: wrap;
 	flex-direction: column;
-	padding: 0 16px;
-	position: relative;
+	justify-content: space-evenly;
+	position: absolute;
+	align-items: center;
 	right: 0;
 	top: 40%;
-	min-width: 60%;
+	min-width: 80px;
+	min-height: 450px;
+	
+	
     
-	.boolean_logo {
-		max-width: 8%;
-	}
+	    .blogo {
+        background-color: transparent;
+
+		 .boolean_logo {
+            max-width: 50px;
+		}
+
+        }
+
+		.item {
+			display: flex;
+			color: #fff;
+			width: 50px;
+			
+		}
+}
+
+			
 	/* Inserisci qui sotto 
 	le tue regole, se necessario. */
-}
+
 
 /* Footer */
 
