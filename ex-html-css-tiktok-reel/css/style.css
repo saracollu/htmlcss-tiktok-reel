@@ -30,6 +30,7 @@ video {
 
 .reel-header {
 	display: flex;
+	flex-direction: row;
 	flex-wrap: wrap;
 	position: absolute;
 	justify-content: space-between;
@@ -161,7 +162,7 @@ da rimuovere una volta concluso
 
 
 /* FARE FOOTER POI AGGIUSTARE IL RESTO. 
-POI AVVICINARE PIù LE ICONE HEADER AI BORDI e aggiustare BORDER BOTTOM DI "PER TE".
+Aggiustare BORDER BOTTOM DI "PER TE".
 TROVARE ICONA SIDEBAR FRECCIA GIUSTA.
 SE RIESCI AGGIUNGI I BONUS.
 CERCA DI CAPIRE COME COMPILARE READ ME*/
